@@ -1,4 +1,4 @@
-#Getting Started
+# Getting Started
 
 Call the `AddXClient()` extension method of `IServiceCollection` to register the XClient services.
 
@@ -25,7 +25,7 @@ public class MyController : ControllerBase
 }
 ```
 
-#Creating an Authorization Url
+# Creating an Authorization Url
 
 ```csharp
 var result = await client.CreateAuthUrlAsync(apiKey, apiSecret, callbackUrl, cancellationToken);
@@ -37,7 +37,7 @@ Convert the oauth verifier to a token
 var result = await client.GetAccessTokenAsync(apiKey, apiSecret, oauthToken, oauthVerifier, cancellationToken);
 ```
 
-#Posting media to twitter
+# Posting media to twitter
 
 First upload each media to twitter:
 
